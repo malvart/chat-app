@@ -6,39 +6,7 @@
 </div>
 
 <div class = "main-content">
-
-  <div class = "chat">
-    <div class = "upper-message">
-      <div class = "chat-name">
-      Tom
-      </div>
-      <div class = "date">
-      2023/4/4(Mon) 18:10:50
-      </div>
-    </div>
-    <div class = "lower-message">
-      <div class = "message">
-        おはよう
-      </div>
-    </div>
-  </div>
-
-  <div class = "chat">
-    <div class = "upper-message">
-      <div class = "chat-name">
-      Tom
-      </div>
-      <div class = "date">
-      2023/4/4(Mon) 18:12:50
-      </div>
-    </div>
-    <div class = "lower-message">
-      <div class = "message">
-        こんばんは
-      </div>
-    </div>
-  </div>
-
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 
