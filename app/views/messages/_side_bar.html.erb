@@ -8,14 +8,11 @@
 </div>
 
 <div class = "side-content">
-  <div class = "room">
-    <div class = "room-name">
-      <a href = "#" class = "room-name">techroom1</a>
+  <% current_user.rooms.each do |r| %>
+    <div class = "room">
+      <div class = "room-name">
+        <a href = "#"><%= r.name %></a>
+      </div>
     </div>
-  </div>
-  <div class = "room">
-    <div class = "room-name">
-      <a href = "#">techroom2</a>
-    </div>
-  </div>
+  <% end %>
 </div>
